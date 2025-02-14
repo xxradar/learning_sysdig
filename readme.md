@@ -73,4 +73,14 @@ sudo sysdig \
 ```
 23045129 15:11:01.981889593 2 nginx (32606.32606) < accept4 fd=15(<4t>10.0.0.70:35674->10.0.0.30:80) tuple=10.0.0.70:35674->10.0.0.30:80 queuepct=0 queuelen=0 queuemax=511
 ```
-
+```
+ubuntu@ip-10-1-2-203:~/app_routable_demo$ kubectl get svc -n app-routable-demo
+NAME    TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+zone1   ClusterIP   10.111.139.225   <none>        80/TCP,443/TCP   11m
+zone2   ClusterIP   10.99.193.179    <none>        80/TCP,443/TCP   11m
+zone3   ClusterIP   10.96.102.50     <none>        80/TCP,443/TCP   11m
+zone4   ClusterIP   10.98.84.1       <none>        80/TCP,443/TCP   11m
+zone5   ClusterIP   10.110.240.145   <none>        80/TCP,443/TCP   11m
+zone6   ClusterIP   10.99.239.112    <none>        80/TCP,443/TCP   11m
+zone7   ClusterIP   10.103.126.59    <none>        80/TCP,443/TCP   11m
+```
