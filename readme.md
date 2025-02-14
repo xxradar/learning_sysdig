@@ -16,6 +16,7 @@ ubuntu@ip-10-1-2-193:~$ sudo sysdig \
 >     -p "%evt.time namespace=%k8s.ns.name pod=%k8s.pod.name proc=%proc.name res=%evt.arg.res labels=%k8s.pod.labels lip=%fd.lip rip=%fd.rip dport=%fd.sproto" \
 >     "k8s.ns.name=app-routable-demo and k8s.pod.name=test and evt.arg.res=0 and evt.type=connect"
 ```
+```
 14:13:11.799124013 namespace=app-routable-demo pod=test proc=curl res=0 labels=run:test lip=10.0.1.222 rip=10.96.0.10 dport=53
 14:13:11.799741149 namespace=app-routable-demo pod=test proc=curl res=0 labels=run:test lip=10.0.1.222 rip=10.96.0.10 dport=53
 14:13:11.799990390 namespace=app-routable-demo pod=test proc=curl res=0 labels=run:test lip=10.0.1.222 rip=10.96.0.10 dport=53
