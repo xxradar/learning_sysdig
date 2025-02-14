@@ -1,3 +1,7 @@
+## install sysdig on every node
+```
+curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | sudo bash
+```
 ## capturing originating from namespace 
 ```
 sudo sysdig \
